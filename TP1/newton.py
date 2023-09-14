@@ -1,10 +1,12 @@
 import math
 
+
 def f(x):
-    return x**3 - 2*x + 1
+    return x ** 3 - 2 * x + 1
+
 
 def derivada(x):
-    return 3*x**2 - 2
+    return 3 * x ** 2 - 2
 
 
 def metodo_newton(x0, tolerancia, max_iteracoes):
@@ -32,12 +34,14 @@ def metodo_newton(x0, tolerancia, max_iteracoes):
 
     print("O método não convergiu após", max_iteracoes, "iterações.")
 
+
 def main():
     x0 = float(input("Estimativa inicial: "))
     tolerancia = 1e-5
     max_iteracoes = 100
 
     metodo_newton(x0, tolerancia, max_iteracoes)
+
 
 if __name__ == "__main__":
     main()

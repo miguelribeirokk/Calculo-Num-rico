@@ -1,7 +1,9 @@
 import math
 
+
 def f(x):
-    return x**3 + 3*x**2 - 1
+    return x ** 3 + 3 * x ** 2 - 1
+
 
 def metodo_regula_falsi(a, b, tolerancia, max_iteracoes):
     iteracoes = 0
@@ -33,6 +35,7 @@ def metodo_regula_falsi(a, b, tolerancia, max_iteracoes):
 
     print("O método não convergiu após", max_iteracoes, "iterações.")
 
+
 def main():
     a = float(input("Primeiro ponto inicial (a): "))
     b = float(input("Segundo ponto inicial (b): "))
@@ -40,6 +43,7 @@ def main():
     max_iteracoes = 100
 
     metodo_regula_falsi(a, b, tolerancia, max_iteracoes)
+
 
 if __name__ == "__main__":
     main()
