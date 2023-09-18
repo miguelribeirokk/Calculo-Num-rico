@@ -5,16 +5,14 @@ import math
 def f(x):
     return x ** 2 - 3
 
-
 def check(a, b):
     return f(a) * f(b) < 0
-
 
 def metodo_bissecao(a, b, e):
     if not check(a, b):
         print("Intervalo não contém raiz.")
         return
-
+    
     i = 0
     xi = (a + b) / 2  # Inicialização de xi
     while math.fabs((b - a) / 2) > e or i < 3:
@@ -33,7 +31,6 @@ def metodo_bissecao(a, b, e):
     if i >= 3:
         print("A raiz é aproximadamente:", xi)
         print("Erro:", math.fabs((b - a) / 2))
-
 
 def main():
     a = float(input("Início do intervalo: "))
